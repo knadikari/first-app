@@ -5,12 +5,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {RouterModule, Routes} from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { ServerComponent } from './server/sever.componet';
-import { SubserverComponent } from './subserver/subserver.component';
-import { RedComponent } from './red/red.component';
-import { GreenComponent } from './green/green.component';
-import { YellowComponent } from './yellow/yellow.component';
-import { FormComponent } from './form/form.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
@@ -27,12 +21,6 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent,
-    SubserverComponent,
-    RedComponent,
-    GreenComponent,
-    YellowComponent,
-    FormComponent,
     NavbarComponent,
     FooterComponent,
     LoginComponent,
