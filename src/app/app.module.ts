@@ -13,10 +13,12 @@ import { RegistrationComponent } from './registration/registration.component';
 import { ArticleComponent } from './article/article.component';
 
 const appRoutes: Routes = [
+  {path: '', redirectTo: 'app-home', pathMatch: 'full'},
+  { path: 'app-home', component: HomeComponent},
   { path: 'app-login', component: LoginComponent},
-  { path: '', component: HomeComponent},
   { path: 'app-registration', component: RegistrationComponent},
-  { path: 'app-article', component: ArticleComponent}
+  { path: 'app-article', component: ArticleComponent},
+  {path: '**', redirectTo: 'app-home', pathMatch: 'full'},
 ]
 @NgModule({
   declarations: [
