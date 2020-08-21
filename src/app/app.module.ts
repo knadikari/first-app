@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import {RouterModule, Routes} from '@angular/router';
+import { NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
+import { AppRoutingModule } from './app-routing.module';
+
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -11,15 +14,11 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ArticleComponent } from './article/article.component';
+import { PageComponent } from './page/page.component';
+import { SinglearticleComponent } from './singlearticle/singlearticle.component';
+import { ArticlecardComponent } from './articlecard/articlecard.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
-const appRoutes: Routes = [
-  {path: '', redirectTo: 'app-home', pathMatch: 'full'},
-  { path: 'app-home', component: HomeComponent},
-  { path: 'app-login', component: LoginComponent},
-  { path: 'app-registration', component: RegistrationComponent},
-  { path: 'app-article', component: ArticleComponent},
-  {path: '**', redirectTo: 'app-home', pathMatch: 'full'},
-]
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,16 +27,18 @@ const appRoutes: Routes = [
     LoginComponent,
     HomeComponent,
     RegistrationComponent,
-    ArticleComponent
+    ArticleComponent,
+    PageComponent,
+    SinglearticleComponent,
+    ArticlecardComponent,
+    GalleryComponent
   ],
   imports: [
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true }
-    ),
     BrowserModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule,
+    NgbPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent, NavbarComponent, FooterComponent]

@@ -22,8 +22,8 @@
                 <a routerLink="/home" routerLinkActive="active" class="nav-link font-weight-bold fade show active">HOME<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
-                        Competition
+                    <a class="nav-link dropdown-toggle font-weight-bold" id="navbarDropdownMenuLink" data-toggle="dropdown">
+                        COMPETITION
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item " href="#">Regulations</a></li>
@@ -51,10 +51,16 @@
                     <a class="nav-link font-weight-bold" href="#">WEEKLY QUIZ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font-weight-bold" href="#">GALLERY</a>
+                    <a class="nav-link font-weight-bold" routerLink="app-gallery" routerLinkActive="active">GALLERY</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link font-weight-bold" href="#">About Us</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle font-weight-bold" data-toggle="dropdown">ABOUT US</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item " href="#">ABOUT</a></li>
+                        <li><a class="dropdown-item" href="#">HISTORY</a></li>
+                        <li><a class="dropdown-item" href="#">PEOPLE</a></li>
+                        <li><a class="dropdown-item" href="#">SCIENCE & CT CELL</a></li>
+                    </ul>
                 </li>
             </ul>
             <ul class="nav navbar-nav nav-flex-icons ml-auto">
@@ -104,4 +110,3 @@
         </div>
     </div>
 </nav>
-<router-outlet></router-outlet>

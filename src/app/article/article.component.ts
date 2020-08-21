@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router'
 import { Service } from '../service/service';
 
 @Component({
@@ -9,11 +10,15 @@ import { Service } from '../service/service';
 export class ArticleComponent implements OnInit {
 
   service: Service
-  constructor() { 
+  constructor(private _router: Router) { 
     this.service = new Service();
   }
 
   ngOnInit(): void {
+  }
+
+  onClick(articleId: Number) {
+    this._router.navigate(['/singlearticle', articleId]);
   }
 
 }

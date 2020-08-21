@@ -1,0 +1,7 @@
+<div class="container" [(ngModel)] = "article"  name="fieldName"  ngDefaultControl>
+    <h1 class="h1 text-center">{{article.title}}</h1>
+    <div *ngIf="!isEmpty(article.image)">
+    <img  class="card-img-top" [src]="article.image" alt="Card image cap">
+    </div>
+    <p>{{article.description}}</p>
+</div>
