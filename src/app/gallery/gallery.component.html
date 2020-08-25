@@ -1,40 +1,12 @@
 <div id="main" class="container">
-    <h1 class="text-center">Gallery</h1>
+  <!-- cod taken from https://uicookies.com/bootstrap-image-gallery/  and https://codepen.io/renaudtertrais/pen/AfnzE-->
+  <h4 class="page-header">GALLERY</h4>
     <div id="gallery" class="row">
-      <div class="col-xs-3 col-sm-6 col-lg-4 gallery-item">
+      <div *ngFor="let category of categories" class="col-xs-3 col-sm-6 col-lg-4 gallery-item">
         <div class="album">
-          <img src="assets/images/Gallery/slmo2004/slmo-2004-awards-img01.jpg" alt="" />
-          <img src="assets/images/Gallery/slmo2004/slmo-2004-awards-img02.jpg" alt="" />
-          <img src="assets/images/Gallery/slmo2004/slmo-2004-awards-img03.jpg" alt="" />
-          <img src="assets/images/Gallery/slmo2004/slmo-2004-awards-img04.jpg" alt="" />
-          <img src="assets/images/Gallery/slmo2004/slmo-2004-awards-img05.jpg" alt="" />
+          <img *ngFor="let image of getImagesForACategory(category.categoryid, images)" [src]="image.imageUrl" alt="" />
         </div>
-        <p>SLMO 2004 Award Ceremony</p>
-      </div>
-      <div class="col-xs-3 col-sm-6 col-lg-4 gallery-item">
-        <div class="album">
-          <img src="assets/images/Gallery/imo2017/imo-2017-img01.jpg" alt="" />
-          <img src="assets/images/Gallery/imo2017/imo-2017-img02.jpg" alt="" />
-          <img src="assets/images/Gallery/imo2017/imo-2017-img03.jpg" alt="" />
-        </div>
-        <p>IMO 2017</p>
-      </div>
-      <div class="col-xs-3 col-sm-6 col-lg-4 gallery-item">
-        <div class="album">
-          <img src="assets/images/Gallery/Timo/Timo1.jpg" alt="" />
-          <img src="assets/images/Gallery/Timo/Timo2.jpg" alt="" />
-          <img src="assets/images/Gallery/Timo/Timo3.jpg" alt="" />
-          <img src="assets/images/Gallery/Timo/Timo4.jpg" alt="" />
-          <img src="assets/images/Gallery/Timo/Timo5.jpg" alt="" />
-        </div>
-         <p>TIMO</p>
-      </div>
-      <div class="col-xs-3 col-sm-6 col-lg-4 gallery-item">
-        <div class="album">
-          <img src="assets/images/Gallery/SLAAS/slaas-2017-awards-img01.jpg" alt="" />
-          <img src="assets/images/Gallery/SLAAS/slaas-2017-awards-img02.jpg" alt="" />
-        </div>
-        <p>SLAAS 2017 Award Ceremony</p>
+        <p>{{category.categoryname}}</p>
       </div>
     </div>
   </div>

@@ -18,18 +18,18 @@
     <div class="container">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                <a routerLink="/home" routerLinkActive="active" class="nav-link font-weight-bold fade show active">HOME<span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                <a routerLink="/home" routerLinkActive="active" class="nav-link font-weight-bold">HOME<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle font-weight-bold" id="navbarDropdownMenuLink" data-toggle="dropdown">
                         COMPETITION
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" style="z-index:3000;">
                         <li><a class="dropdown-item " href="#">Regulations</a></li>
                         <li><a class="dropdown-item" href="#">Important Dates</a></li>
                         <li class="nav-item dropdown">
-                            <a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown">SLMO</a>
+                            <a class="nav-link dropdown-item dropdown-toggle" data-toggle="dropdown">SLMO</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">SLMCC</a></li>
                             </ul>
@@ -48,27 +48,42 @@
                     <a class="nav-link font-weight-bold" href="#">FORUM</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font-weight-bold" href="#">WEEKLY QUIZ</a>
+                    <a class="nav-link font-weight-bold" href="#">RESOURCES</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a data-toggle="dropdown" class="nav-link font-weight-bold" href="#">WEEKLY QUIZ</a>
+                    <ul class="dropdown-menu" style="z-index:3000;">
+                        <li><a class="dropdown-item " routerLink="app-challengingmaths" routerLinkActive="active">CHALLENGING MATHS</a></li>
+                        <li><a class="dropdown-item " routerLink="app-about" routerLinkActive="active">CHANAKYA'S MIND GAMES</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link font-weight-bold" routerLink="app-gallery" routerLinkActive="active">GALLERY</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle font-weight-bold" data-toggle="dropdown">ABOUT US</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item " href="#">ABOUT</a></li>
-                        <li><a class="dropdown-item" href="#">HISTORY</a></li>
-                        <li><a class="dropdown-item" href="#">PEOPLE</a></li>
+                    <a class="nav-link dropdown-toggle font-weight-bold" data-toggle="dropdown" >ABOUT US</a>
+                    <ul class="dropdown-menu" style="z-index:3000;">
+                        <li><a class="dropdown-item " routerLink="app-about" routerLinkActive="active">ABOUT</a></li>
+                        <li><a class="dropdown-item" routerLink="app-abouthistory" routerLinkActive="active">HISTORY</a></li>
+                        <li><a class="dropdown-item" routerLink="app-aboutpepole" routerLinkActive="active">PEOPLE</a></li>
                         <li><a class="dropdown-item" href="#">SCIENCE & CT CELL</a></li>
                     </ul>
                 </li>
             </ul>
             <ul class="nav navbar-nav nav-flex-icons ml-auto">
-                <li class="nav-item">
-                    <a routerLink="app-registration" routerLinkActive="active" class="nav-link" role="button"><span class="clearfix d-none d-sm-inline-block fa fa-user"> Register</span></a>
+                <li class="nav-item dropdown">
+                    <a data-toggle="dropdown" class="nav-link" role="button"><span class="clearfix d-none d-sm-inline-block fa fa-user"> Register</span></a>
+                    <ul class="dropdown-menu" style="z-index:3000;">
+                        <li><a class="dropdown-item " routerLink="app-login" routerLinkActive="active">COMPETITION</a></li>
+                        <li><a class="dropdown-item" routerLink="app-registration" routerLinkActive="active">FORUM</a></li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a routerLink="app-login" routerLinkActive="active" class="nav-link" role="button"><span class="clearfix d-none d-sm-inline-block fa fa-sign-in"> Login</span></a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" role="button"><span class="clearfix d-none d-sm-inline-block fa fa-sign-in"> Login</span></a>
+                    <ul class="dropdown-menu" style="z-index:3000;">
+                        <li><a class="dropdown-item " routerLink="app-login" routerLinkActive="active">COMPETITION</a></li>
+                        <li><a class="dropdown-item" routerLink="app-abouthistory" routerLinkActive="active">FORUM</a></li>
+                    </ul>
                     <!-- <div class="dropdown-menu">
                             <div class="container">
                         <ul class="nav nav-tabs" id="myForm">

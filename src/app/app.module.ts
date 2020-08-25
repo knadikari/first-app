@@ -18,6 +18,11 @@ import { PageComponent } from './page/page.component';
 import { SinglearticleComponent } from './singlearticle/singlearticle.component';
 import { ArticlecardComponent } from './articlecard/articlecard.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { AboutpepoleComponent } from './aboutpepole/aboutpepole.component';
+import { AboutComponent } from './about/about.component';
+import { AbouthistoryComponent } from './abouthistory/abouthistory.component';
+import { ChallengingmathsComponent } from './challengingmaths/challengingmaths.component';
+import { MindgamesComponent } from './mindgames/mindgames.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +36,12 @@ import { GalleryComponent } from './gallery/gallery.component';
     PageComponent,
     SinglearticleComponent,
     ArticlecardComponent,
-    GalleryComponent
+    GalleryComponent,
+    AboutpepoleComponent,
+    AboutComponent,
+    AbouthistoryComponent,
+    ChallengingmathsComponent,
+    MindgamesComponent
   ],
   imports: [
     BrowserModule,

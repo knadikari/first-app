@@ -1,0 +1,45 @@
+
+<!--div class="about-section">
+    <h1>About Us Page</h1>
+    <p>Some text about who we are and what we do.</p>
+    <p>Resize the browser window to see that this page is responsive by the way.</p>
+  </div-->
+<div class="container">
+
+  <h4 class="page-header">PEOPLE</h4>
+
+   <h5 style="text-align:center">Advisory Board</h5>
+   <hr style="height: 2px; background: black; inline-size: 100px;"/>
+   
+   <div class="row card-deck">
+      <div *ngFor="let member of advisoryboard" class="col-xs-3 col-sm-6 col-lg-4">
+      <div class="card">
+        <img class="card-img-top" [src]="member.image" [alt]="member.name" style="height: 15vh;width:100%">
+        <div class="container">
+          <h2 class="card-title">{{member.name}}</h2>
+          <p class="title">{{member.title}}</p>
+          <p>{{member.details}}</p>
+          <p>{{member.email}}</p>
+        </div>
+        <button class="btn btn-secondary btn-lg btn-block">Contact</button>
+      </div>
+    </div>
+  </div>
+
+  <h5 style="text-align:center">Director Board</h5>
+  <hr style="height: 2px; background: black; inline-size: 100px;"/>
+  <div class="row card-deck">
+    <div *ngFor="let member of directorboard" class="col-xs-3 col-sm-6 col-lg-4">
+      <div class="card">
+        <img class="card-img-top" [src]="member.image" [alt]="member.name" style="height: 15vh;width:100%">
+        <div class="container">
+          <h2 class="card-title">{{member.name}}</h2>
+          <p class="title">{{member.title}}</p>
+          <p>{{member.details}}</p>
+          <p>{{member.email}}</p>
+        </div>
+        <button class="btn btn-secondary btn-lg btn-block">Contact</button>
+      </div>
+    </div>
+</div>
+</div>

@@ -7,6 +7,10 @@ import { RegistrationComponent } from './registration/registration.component';
 import { ArticleComponent } from './article/article.component';
 import { SinglearticleComponent } from './singlearticle/singlearticle.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { AboutpepoleComponent } from './aboutpepole/aboutpepole.component';
+import { AboutComponent } from './about/about.component';
+import { AbouthistoryComponent } from './abouthistory/abouthistory.component'
+import { ChallengingmathsComponent } from './challengingmaths/challengingmaths.component'
 
 const appRoutes: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -22,6 +26,10 @@ const appRoutes: Routes = [
     { path: 'app-article', component: ArticleComponent},
     { path: 'singlearticle/:id', component: SinglearticleComponent},
     { path: 'app-gallery', component: GalleryComponent},
+    { path: 'app-aboutpepole', component: AboutpepoleComponent},
+    { path: 'app-about', component: AboutComponent},
+    { path: 'app-abouthistory', component: AbouthistoryComponent},
+    { path: 'app-challengingmaths', component: ChallengingmathsComponent},
     {path: '**', redirectTo: 'app-home', pathMatch: 'full'},
   ];
 
